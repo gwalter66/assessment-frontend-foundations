@@ -1,3 +1,8 @@
+**note**
+  I found that a width of 480 px was too small for my browser to be able to shrink to. 
+  I used a setting of 414pt for the with while working and changed the value to the requested 480px when finished
+  i hope this does not coause any issues for you while reviewing my work
+
 # Thinkfulbnb
 
 Thinkfulbnb is a vacation rental website that allows people to rent out their homes to people who are seeking short-term accommodations in that locale. Thinkfulbnb hosts rent out different kinds of properties, including single rooms, apartments, and unique living spaces such as yachts, houseboats, yurts, tiny houses, and even renovated medieval castles.

@@ -35,27 +35,52 @@ main img {
 }
 
 /* ---  Groups & Items --- */
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
 
- .idea-group, .host-group {
+  .item {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .item-double {
+    display: flex;
+    flex: 2;
+  }
+
+ .idea-group {
   display: flex;
   flex-direction: column;  
 }
 
-.item, .host-item, .host-item-double {
-  flex: 1;
-  margin: 10px;
-  justify-content: space-evenly;
-}
-
-.item-double {
-  flex: 2;
-  padding: 30px 0 ;
-}
 .idea-top, .idea-bottom {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  
+}
+
+.host-group {
+  display: flex;
+  flex-direction: column;  
+  padding: 10px;
+}
+
+.host-group h2 {
+  padding: 10px;
+}
+
+.host-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.host-item-double img {
+  display: flex;
+  padding: 10px;
 }
 
 /* -------  Navigation ------- */
@@ -64,12 +89,16 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 15vw;
   color: #fff;
+
 }
 
 header nav ul li {
@@ -90,6 +119,7 @@ header nav ul li a:hover {
 header nav {
   display: flex;
   justify-content: center;
+
 }
 
 header nav ul {
@@ -107,6 +137,7 @@ form {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 
@@ -133,6 +164,7 @@ form button {
   display: flex;
   flex-direction: row;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .form-row label {
   flex: 1;
@@ -158,8 +190,8 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px){
   header {
-    display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   form {
@@ -169,27 +201,19 @@ footer p {
 
   }
  
- 
-
   .form-row {
      flex-direction: column;
-    
   }
 
-  .group {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-  }
+ .group {
+  flex-direction: row;
+ }
 
-  .host-group {
-    display: flex;
-    flex-direction: row;
-  }
-  .host-item-double {
-    flex: 2;
-    padding: 10px;
-  }
+ .item-double p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ }
 
   .idea-top, .idea-bottom {
     flex: 1;
@@ -201,5 +225,19 @@ footer p {
     flex: 1;
     padding: 10px;
     
+  }
+
+  .host-group {
+    flex-direction: row;
+    
+  }
+
+  .host-item {
+    min-width: 48.5%;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 72px;
   }
 }

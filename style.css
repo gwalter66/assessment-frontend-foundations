@@ -175,6 +175,7 @@ form button {
 }
 
 
+
 /* -------  Footer ------- */
 
 footer {
@@ -186,6 +187,8 @@ footer p {
   text-align: center;
   padding: 20px;
 }
+
+
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px){
@@ -201,6 +204,13 @@ footer p {
 
   }
  
+  input, select {
+    width: 2rem;
+  }
+  label {
+    width: 1rem;
+  }
+  
   .form-row {
      flex-direction: column;
   }
@@ -238,6 +248,44 @@ footer p {
   }
 
   .logo {
-    font-size: 72px;
+    font-size: 5vw;
+  }
+}
+
+@media all and (min-width: 510px){
+  input, select {
+    width: 3rem;
+  }
+}
+
+@media all and (min-width: 575px){
+  input, select {
+    width: 4rem;
+  }
+}
+
+@media all and (min-width: 635px) {
+  input, select {
+    width: 5rem;
+  }
+
+  
+}
+
+@media all and (min-width: 700px) {
+  input, select {
+    width: 6rem;
+  }
+}
+
+@media all and (min-width: 775px) {
+  input, select {
+    width: 7rem;
+  }
+}
+
+@media all and (min-width: 875px) {
+  input, select {
+    width: 100%;
   }
 }
